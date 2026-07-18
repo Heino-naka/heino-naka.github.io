@@ -157,6 +157,7 @@ body:not(.menu-open) .m-menu{visibility:hidden;transition:clip-path .55s var(--e
     linear-gradient(180deg,#EDF2F4 0%,var(--paper) 74%);
   position:relative;overflow:hidden;
 }
+.hero>*{min-width:0}
 .hero-label{
   word-break:keep-all;overflow-wrap:break-word;
   font-size:.74rem;letter-spacing:.3em;color:var(--slate);margin-bottom:34px;
@@ -168,7 +169,7 @@ body:not(.menu-open) .m-menu{visibility:hidden;transition:clip-path .55s var(--e
 .hero-label b{color:var(--sun);font-weight:700}
 
 /* --- 反転装置（signature） --- */
-.flip-stage{max-width:840px;position:relative}
+.flip-stage{max-width:840px;position:relative;min-width:0}
 .flip-common{
   font-family:var(--serif);font-weight:500;
   font-size:clamp(1.15rem,2.5vw,1.75rem);
@@ -199,7 +200,7 @@ body:not(.menu-open) .m-menu{visibility:hidden;transition:clip-path .55s var(--e
   font-family:var(--serif);font-weight:800;
   font-size:clamp(1.95rem,4.7vw,3.7rem);
   line-height:1.42;color:var(--ink);letter-spacing:.015em;
-  min-height:2.9em;
+  min-height:2.9em;overflow-wrap:break-word;
 }
 .flip-truth .ch{
   display:inline-block;opacity:0;transform:translateY(.45em) rotate(2deg);

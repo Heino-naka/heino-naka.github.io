@@ -107,6 +107,7 @@ nav a.active{color:var(--sun)}
 .menu-btn{display:none}
 @media(max-width:900px){
   nav ul li:not(.keep){display:none}
+  nav ul li.keep .nav-cta{display:none}
   header{padding:13px 18px}
   .menu-btn{
     display:grid;place-items:center;gap:5px;
@@ -768,7 +769,7 @@ footer .fl a:hover::after{transform:scaleX(1)}
 <!-- ================= 実績帯 ================= -->
 <div class="proof" role="list" aria-label="実績">
   <div role="listitem"><strong><em data-count="128">0</em>本</strong><span>講演・活動の公開記録（2023年春〜）</span></div>
-  <div role="listitem"><strong><em data-count="600">0</em>名以上</strong><span>子育てセミナーin笠間 参加者累計</span></div>
+  <div role="listitem"><strong><em data-count="700">0</em>名以上</strong><span>子育てセミナーin笠間 参加者累計</span></div>
   <div role="listitem"><strong>ほぼ日<em>8:00</em></strong><span>通勤ひとりごとラジオ 週5〜6配信</span></div>
   <div role="listitem"><strong><em data-count="4">0</em>つの現場</strong><span>司法・福祉・教育・心理を横断</span></div>
 </div>
@@ -790,7 +791,7 @@ footer .fl a:hover::after{transform:scaleX(1)}
   <div class="sec-head rv">
     <span class="eyebrow" aria-hidden="true"><b>壱</b>回り道の記録</span>
     <div>
-      <h2 class="sec-title split">まっすぐ来なかったから、<br>見えるものがある。</h2>
+      <h2 class="sec-title split">まっすぐ来なかったから、見えるものがある。</h2>
       <p class="sec-lede">教育・心理の世界だけで育った専門家ではありません。営業の現場、パレスチナ、少年院——回り道のすべてが、いまの視点の土台です。</p>
     </div>
   </div>
@@ -828,7 +829,7 @@ footer .fl a:hover::after{transform:scaleX(1)}
   <div class="sec-head rv">
     <span class="eyebrow" aria-hidden="true"><b>弐</b>反転の思想</span>
     <div>
-      <h2 class="sec-title split">「正しさ」の内側にある違和感を、<br>ひっくり返す。</h2>
+      <h2 class="sec-title split">「正しさ」の内側にある違和感を、ひっくり返す。</h2>
       <p class="sec-lede">広く信じられている常識ほど、誰かを静かに苦しめていることがある。僕の発信はぜんぶ、この反転からはじまっています。</p>
     </div>
   </div>
@@ -918,7 +919,7 @@ footer .fl a:hover::after{transform:scaleX(1)}
     </div>
   </div>
   <div class="lect-note rv">
-    <p><strong>実績はすべて公開しています。</strong>過去の講演のスライドはnoteの活動記録マガジンで無料公開中。テーマ・対象・時間は個別に設計します。茨城県内はもちろん、県外（愛知・高知ほか）・オンラインにも対応。</p>
+    <p><strong>実績はすべて公開しています。</strong>過去の講演のスライドはnoteの活動記録マガジンで無料公開中。テーマ・対象・時間は個別に設計します。茨城県内はもちろん、全国各地及びオンラインにも対応。</p>
     <a class="btn btn-primary" href="service-lecture.html">講演・研修の詳細を見る</a>
     <a class="btn btn-ghost" href="kasama-seminar.html">子育てセミナーin笠間の記録を見る</a>
   </div>
@@ -946,7 +947,7 @@ footer .fl a:hover::after{transform:scaleX(1)}
       <ul class="media-list">
         <li><span class="mk">連載寄稿</span><span>日本教育新聞「現場の本音」——法務教官の視点から9回連載</span></li>
         <li><span class="mk">音声出演</span><span><a href="https://voox.me/blog/akira-abe" target="_blank" rel="noopener">音声メディアVOOX「少年院の仕事から見えたもの」</a></span></li>
-        <li><span class="mk">出演</span><span>教育系ポッドキャスト・YouTubeチャンネルに対談等で多数出演</span></li>
+        <li><span class="mk">出演</span><span><a href="https://open.spotify.com/episode/1DtJ2wvW4tkoO1Bp6gEyLN?si=HG3xpFHCQxa3PuCCn7oiuA" target="_blank" rel="noopener">教育系ポッドキャスト</a>・YouTubeチャンネルに対談等で<a href="https://youtube.com/playlist?list=PLuVUG97WvMuOHvsYqWKfnhTPk3qVf0tqs&si=H782liLAo4ysVnaa" target="_blank" rel="noopener">多数出演</a></span></li>
       </ul>
     </div>
   </div>
@@ -968,7 +969,7 @@ footer .fl a:hover::after{transform:scaleX(1)}
         <h3>無料の発信<small>まずはここから</small></h3>
         <p>通勤ひとりごとラジオ（Spotify・X朝8時ライブ）、note、Substack、YouTube。ほぼ毎日、現場の気づきを言葉にしています。</p>
       </div>
-      <span class="tag">無料</span>
+      <a class="tag" href="#media">詳細▼</a>
     </div>
     <div class="step rv" style="--i:1">
       <span class="step-no" aria-hidden="true">01</span>
@@ -976,35 +977,27 @@ footer .fl a:hover::after{transform:scaleX(1)}
         <h3>著書を読む<small>『塀の中の教室』</small></h3>
         <p>少年院と法務教官のリアルを一冊で。僕の視点の原点がここにあります。研修の事前資料としてもどうぞ。</p>
       </div>
-      <span class="tag">Kindle</span>
+      <a class="tag" href="#works">Kindle</a>
     </div>
     <div class="step rv" style="--i:2">
       <span class="step-no" aria-hidden="true">02</span>
       <div>
-        <h3>noteメンバーシップ<small>へいラボ</small></h3>
-        <p>毎週の子育てコラムに加えて、最大の特典は<a href="https://note.com/heino_naka/membership" target="_blank" rel="noopener">毎月の講演動画</a>。個別セッションの申込窓口もこちらです。<br>
-        <span class="funnel">講演スライドは<b>無料公開</b> ▶ 動画で観たくなったら<b>メンバーシップへ</b></span></p>
+        <h3>講演実績を見る<small>note</small></h3>
+        <p>過去の講演スライドは<a href="https://note.com/heino_naka/m/m3be56df3797a" target="_blank" rel="noopener">活動記録マガジン</a>で無料公開中。動画で観たい方は、<a href="https://note.com/heino_naka/membership" target="_blank" rel="noopener">noteメンバーシップ</a>（毎週コラム＋毎月の講演動画）または<a href="https://note.com/heino_naka" target="_blank" rel="noopener">note</a>での単品購入、どちらでもご視聴いただけます。<br>
+        <span class="funnel">スライドは<b>無料公開</b> ▶ 動画で観たくなったら<b>メンバーシップ or 単品購入</b></span></p>
       </div>
-      <span class="tag">月額</span>
+      <span class="tag">月額 / 単品</span>
     </div>
     <div class="step rv" style="--i:3">
       <span class="step-no" aria-hidden="true">03</span>
       <div>
         <h3>セミナー・講座に参加<small>子育てセミナーin笠間ほか</small></h3>
-        <p>2024年1月開始の子育てセミナーin笠間は、会場・オンライン合わせて延べ600名以上が参加。オンライン視聴にも対応しています。</p>
+        <p>2024年1月開始の子育てセミナーin笠間は、会場・オンライン合わせて延べ700名以上が参加。オンライン視聴にも対応しています。</p>
       </div>
       <span class="tag">保護者・一般向け</span>
     </div>
-    <div class="step rv" style="--i:4">
+    <div class="step flag rv" style="--i:4">
       <span class="step-no" aria-hidden="true">04</span>
-      <div>
-        <h3>講演アーカイブ動画<small>note</small></h3>
-        <p>過去の講演・セミナーのアーカイブ動画は、<a href="https://note.com/heino_naka" target="_blank" rel="noopener">note</a>に集約して販売しています。子育て・支援・組織のご相談は、下記のご依頼窓口からお気軽にどうぞ。<br>※ご相談枠には限りがあります。</p>
-      </div>
-      <span class="tag">アーカイブ視聴</span>
-    </div>
-    <div class="step flag rv" style="--i:5">
-      <span class="step-no" aria-hidden="true">05</span>
       <div>
         <h3>講演・研修を依頼する<small>学校・自治体・企業向け</small></h3>
         <p>教職員研修・保護者向け講演会・支援者研修・出前授業・企業研修まで。テーマ・対象・時間はご相談に応じて設計します。県外・オンライン対応可。法人契約・請求書払いにも対応します。</p>
@@ -1075,22 +1068,22 @@ footer .fl a:hover::after{transform:scaleX(1)}
     </div>
     <div class="pj rv">
       <h3>不良米プロジェクト</h3>
-      <div><p>地域農業×コミュニティ形成の実践。田んぼを媒介に、人と人がつながる場をつくっています。</p></div>
+      <div><p>地域農業×コミュニティ形成の実践。田んぼを媒介に、人と人がつながる場をつくっています。<a href="https://www.instagram.com/furyou.mai/" target="_blank" rel="noopener">（詳細はこちら）</a></p></div>
     </div>
     <div class="pj rv">
       <h3>こども発達支援研究会</h3>
-      <div><p>「こはけん」機関研究員・講師として、発達支援に関わる支援者の学びの場づくりに参画しています。</p></div>
+      <div><p>「こはけん」機関研究員・講師として、発達支援に関わる支援者の学びの場づくりに参画しています。<a href="https://kohaken.net/member/" target="_blank" rel="noopener">（詳細はこちら）</a></p></div>
     </div>
     <div class="pj rv">
       <h3>森でほっとココア</h3>
-      <div><p>森の中でココアを片手にほっとする、主催イベント。支援の入口は、あたたかい一杯からでいい。</p></div>
+      <div><p>森の中でココアを片手にほっとする、主催イベント。支援の入口は、あたたかい一杯からでいい。<a href="https://for-good.net/project/1003058" target="_blank" rel="noopener">（詳細はこちら）</a></p></div>
     </div>
   </div>
 </section>
 
 <!-- ================= CTA ================= -->
 <section class="cta-final" id="contact">
-  <h2 class="rv">「言われてみれば、たしかに」を、<br><em>あなたの現場へ。</em></h2>
+  <h2 class="rv">「言われてみれば、たしかに」を、<em>あなたの現場へ。</em></h2>
   <p class="lead rv">講演・研修・執筆・出演のご依頼、個別相談のお申し込みなど、まずはお気軽にご連絡ください。テーマ・対象・予算はご相談に応じて設計します。</p>
   <div class="contact-cards rv">
     <a class="ccard primary" href="https://forms.gle/ktKJj3z5koqBAWUA8" target="_blank" rel="noopener">

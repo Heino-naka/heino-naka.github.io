@@ -556,6 +556,9 @@ section{padding:120px 8vw;position:relative}
   border:1px solid rgba(34,38,46,.18);border-radius:2px;
   padding:5px 13px;white-space:nowrap;align-self:center;
 }
+a.step-no,a.tag{cursor:pointer}
+.step a.tag{color:var(--sun);border-color:var(--sun-soft);transition:background .2s,color .2s}
+.step a.tag:hover{background:var(--sun);color:#fff}
 .step.flag{border-left:4px solid var(--sun)}
 .step.flag .tag{color:var(--sun);border-color:var(--sun-soft)}
 .funnel{
@@ -1055,7 +1058,7 @@ footer .fl a:hover::after{transform:scaleX(1)}
     <span class="eyebrow" aria-hidden="true"><b>漆</b>手を動かす</span>
     <div>
       <h2 class="sec-title split">言葉だけじゃなく、実践も。</h2>
-      <p class="sec-lede">発信の外側で、地域とこどもに手を動かしています。</p>
+      <p class="sec-lede">発信の外側で、様々な活動をしています。</p>
     </div>
   </div>
   <div class="pj-list">
@@ -1068,15 +1071,15 @@ footer .fl a:hover::after{transform:scaleX(1)}
     </div>
     <div class="pj rv">
       <h3>不良米プロジェクト</h3>
-      <div><p>地域農業×コミュニティ形成の実践。田んぼを媒介に、人と人がつながる場をつくっています。<a href="https://www.instagram.com/furyou.mai/" target="_blank" rel="noopener">（詳細はこちら）</a></p></div>
+      <div><p>地域農業×コミュニティ形成の実践。田んぼを媒介に、人と人がつながる場をつくっています。<a href="https://www.instagram.com/furyou.mai/" target="_blank" rel="noopener">（詳細）</a></p></div>
     </div>
     <div class="pj rv">
       <h3>こども発達支援研究会</h3>
-      <div><p>「こはけん」機関研究員・講師として、発達支援に関わる支援者の学びの場づくりに参画しています。<a href="https://kohaken.net/member/" target="_blank" rel="noopener">（詳細はこちら）</a></p></div>
+      <div><p>「こはけん」機関研究員・講師として、発達支援に関わる支援者の学びの場づくりに参画しています。<a href="https://kohaken.net/member/" target="_blank" rel="noopener">（詳細）</a></p></div>
     </div>
     <div class="pj rv">
       <h3>森でほっとココア</h3>
-      <div><p>森の中でココアを片手にほっとする、主催イベント。支援の入口は、あたたかい一杯からでいい。<a href="https://for-good.net/project/1003058" target="_blank" rel="noopener">（詳細はこちら）</a></p></div>
+      <div><p>森の中でココアを片手にほっとする、主催イベント。支援の入口は、あたたかい一杯からでいい。<a href="https://for-good.net/project/1003058" target="_blank" rel="noopener">（詳細）</a></p></div>
     </div>
   </div>
 </section>
@@ -1233,13 +1236,10 @@ const cio = new IntersectionObserver(es=>{
 },{threshold:.6});
 counters.forEach(c=>cio.observe(c));
 
-/* ---------- header：下スクロールで隠す／ナビ現在地 ---------- */
+/* ---------- header：常時表示／ナビ現在地 ---------- */
 const headerEl = document.getElementById("siteHeader");
-let lastY = 0;
 addEventListener("scroll", ()=>{
   const y = scrollY;
-  headerEl.classList.toggle("hidden", y>140 && y>lastY && !document.body.classList.contains("menu-open"));
-  lastY = y;
   document.getElementById("toTop").classList.toggle("show", y>800);
 },{passive:true});
 
